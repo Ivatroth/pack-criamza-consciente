@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pack Crianza Consciente Sin Gritos | Educar con Calma</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="El sistema práctico para educar con límites y calma. Herramientas para niños de 2 a 12 años sin gritos ni culpas.">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons & Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        :root {
+            --primary: #FF8C42; 
+            --secondary: #FFB5A7; 
+            --accent: #A8E6CF; 
+            --bg-cream: #FFF5E6; 
+            --text-dark: #2C3E50;
+            --coral: #FF6B6B;
+            --mint: #A8E6CF;
+            --sky: #B8E6F0;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: var(--bg-cream);
+            color: var(--text-dark);
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, .poppins { font-family: 'Poppins', sans-serif; }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+        }
+
+        .cta-button {
+            background-color: var(--coral);
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 10px 20px rgba(255, 107, 107, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-5px) scale(1.03);
+            background-color: #ff5252;
+            box-shadow: 0 15px 30px rgba(255, 107, 107, 0.4);
+        }
+
+        /* Placeholder styles para imágenes sin link */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+        img:hover { transform: scale(1.02); }
+
+        img:not([src]), img[src=""] {
+            background: #e2e8f0;
+            min-height: 150px;
+            display: flex;
+            position: relative;
+            border: 2px dashed #cbd5e1;
+        }
+        img:not([src])::after, img[src=""]::after {
+            content: "📷 Colocar enlace aquí: " attr(alt);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 14px;
+            color: #64748b;
+            text-align: center;
+            width: 80%;
+            font-weight: bold;
+        }
+
+        .gradient-bg { background: linear-gradient(135deg, var(--bg-cream) 0%, var(--secondary) 100%); }
+        .pulse { animation: pulse-animation 2s infinite; }
+        @keyframes pulse-animation {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .check-icon { color: #4ade80; }
+        .x-icon { color: #f87171; }
+    </style>
+</head>
+<body>
+
+    <!-- 1. HERO SECTION -->
+    <header class="min-h-screen flex items-center pt-20 pb-12 gradient-bg px-4 relative overflow-hidden">
+        <div class="container mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
+            <div data-aos="fade-right">
+                <span class="inline-block px-4 py-1 mb-4 text-xs font-bold text-white bg-orange-500 rounded-full">🔥 Oferta especial - Descarga inmediata</span>
+                <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight text-slate-800">
+                    Pack Crianza Consciente <span class="text-coral">Sin Gritos</span>
+                </h1>
+                <h2 class="text-xl md:text-2xl font-semibold text-slate-600 mb-6">
+                    El sistema práctico para educar con límites y calma (sin gritar, sin culpas y sin castigos)
+                </h2>
+                <p class="text-lg text-slate-500 mb-8">
+                    Herramientas claras y aplicables para familias con niños de 2 a 12 años, incluyendo rabietas, enojo, límites y autorregulación emocional.
+                </p>
+                
+                <div class="space-y-6">
+                    <!-- REEMPLAZAR CON ENLACE DE HOTMART -->
+                    <a id="buyBtnHero" href="#precio" class="cta-button pulse inline-block w-full md:w-auto text-center px-10 py-5 text-white font-bold text-lg rounded-xl shadow-lg">
+                        SÍ, QUIERO TRANSFORMAR MI CRIANZA AHORA <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                    <div class="flex flex-wrap gap-6 text-sm font-bold text-slate-600">
+                        <span><i class="fas fa-check-circle check-icon"></i> Descarga inmediata</span>
+                        <span><i class="fas fa-shield-alt text-blue-400"></i> Garantía 7 días</span>
+                        <span><i class="fas fa-lock text-slate-400"></i> Pago seguro</span>
+                    </div>
+                    <p class="text-sm text-orange-600 font-bold"><i class="fas fa-users mr-2"></i> Más de 1,247 familias ya están criando con calma</p>
+                </div>
+            </div>
+            <div class="relative" data-aos="zoom-in">
+                <!-- IMAGEN HERO -->
+                <img src="https://res.cloudinary.com/db4cqwalt/image/upload/v1769263298/descarga_-_2026-01-24T092620.498_marbtg.jpg" alt="[IMAGEN HERO: Madre sonriente abrazando a su hijo, ambiente cálido y luminoso]" class="w-full shadow-2xl border-8 border-white">
+                <div class="absolute -bottom-6 -right-6 glass p-6 shadow-xl hidden md:block">
+                    <p class="text-sm font-bold text-slate-800">"¡Nuestra casa es otra!"</p>
+                    <div class="flex text-yellow-400 text-xs mt-1">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. IDENTIFICACIÓN (Problema) -->
+    <section class="py-24 bg-white px-4">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16" data-aos="fade-up">✨ ¿Te pasa esto?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+                <div class="glass p-8 border-none shadow-md hover:shadow-xl transition-shadow" data-aos="fade-up">
+                    <div class="text-5xl mb-6">😤</div>
+                    <p class="text-slate-700 font-medium">"Decís 'no voy a gritar' y a los 10 minutos explotás"</p>
+                </div>
+                <div class="glass p-8 border-none shadow-md hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-5xl mb-6">😰</div>
+                    <p class="text-slate-700 font-medium">"Tu hijo entra en rabieta y sentís que perdés el control"</p>
+                </div>
+                <div class="glass p-8 border-none shadow-md hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-5xl mb-6">💔</div>
+                    <p class="text-slate-700 font-medium">"Querés poner límites, pero sin romper el vínculo"</p>
+                </div>
+                <div class="glass p-8 border-none shadow-md hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-5xl mb-6">😔</div>
+                    <p class="text-slate-700 font-medium">"Después te invade la culpa, el cansancio… y volvés a empezar igual"</p>
+                </div>
+            </div>
+            <div class="max-w-3xl mx-auto text-center bg-orange-50 p-8 rounded-3xl border-2 border-orange-100" data-aos="zoom-in">
+                <p class="text-xl md:text-2xl text-slate-800">
+                    <strong>📌 No es falta de amor.</strong> Es falta de herramientas en el momento exacto.<br>
+                    Este pack fue creado para eso: para darte un sistema simple, real y humano.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. ¿QUÉ ES ESTE PACK? -->
+    <section class="py-24 bg-amber-50 px-4">
+        <div class="container mx-auto max-w-5xl">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                    <h2 class="text-3xl font-bold mb-8">Un kit completo diseñado para la vida real</h2>
+                    <p class="text-xl text-slate-700 mb-6 leading-relaxed">
+                        Un kit completo de <strong>SOLUCIONES</strong> compuesto de <strong>ebooks con guías prácticas + posters y tarjetas imprimibles</strong> para usar en casa y aplicar desde el primer día.
+                    </p>
+                    <p class="text-xl text-orange-600 font-bold italic">
+                        No es teoría. No es 'crianza perfecta'. Es crianza posible: con estructura, calma y límites firmes.
+                    </p>
+                </div>
+                <div data-aos="fade-left">
+                    <!-- IMAGEN ILUSTRATIVA PACK -->
+                    <img src="https://res.cloudinary.com/db4cqwalt/image/upload/v1769344938/Gemini_Generated_Image_x8cc34x8cc34x8cc_cq7qdn.png" alt="[Imagen de Mockup de PDFs y documentos digitales del pack]" class="rounded-3xl shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. BENEFICIOS -->
+    <section class="py-24 bg-white px-4">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16" data-aos="fade-up">✅ ¿Qué vas a lograr con este Pack?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <div class="flex items-start p-6 bg-green-50 rounded-2xl" data-aos="fade-up">
+                    <i class="fas fa-check-circle text-3xl check-icon mr-4 mt-1"></i>
+                    <p class="text-lg font-bold text-slate-700">Reducir gritos y reacciones impulsivas</p>
+                </div>
+                <div class="flex items-start p-6 bg-green-50 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-check-circle text-3xl check-icon mr-4 mt-1"></i>
+                    <p class="text-lg font-bold text-slate-700">Acompañar rabietas sin desbordarte</p>
+                </div>
+                <div class="flex items-start p-6 bg-green-50 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-check-circle text-3xl check-icon mr-4 mt-1"></i>
+                    <p class="text-lg font-bold text-slate-700">Poner límites sin castigos ni amenazas</p>
+                </div>
+                <div class="flex items-start p-6 bg-green-50 rounded-2xl" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-check-circle text-3xl check-icon mr-4 mt-1"></i>
+                    <p class="text-lg font-bold text-slate-700">Enseñar a tu hijo a calmarse cuando siente enojo</p>
+                </div>
+                <div class="flex items-start p-6 bg-green-50 rounded-2xl" data-aos="fade-up" data-aos-delay="400">
+                    <i class="fas fa-check-circle text-3xl check-icon mr-4 mt-1"></i>
+                    <p class="text-lg font-bold text-slate-700">Mejorar el vínculo familiar con herramientas reales</p>
+                </div>
+                <div class="flex items-start p-6 bg-green-50 rounded-2xl" data-aos="fade-up" data-aos-delay="500">
+                    <i class="fas fa-check-circle text-3xl check-icon mr-4 mt-1"></i>
+                    <p class="text-lg font-bold text-slate-700">Tener recursos listos para usar en el momento difícil</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <a id="buyBtnBenefits" href="#precio" class="cta-button inline-block text-white font-bold py-5 px-10 rounded-xl text-lg shadow-xl">
+                    QUIERO ESTOS RESULTADOS EN MI FAMILIA
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. PRODUCTOS PRINCIPALES -->
+    <section class="py-24 bg-slate-50 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16" data-aos="fade-up">✅ ¿QUÉ INCLUYE EL PACK?</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
+                <!-- Producto 1 -->
+                <div class="bg-white rounded-[40px] shadow-xl overflow-hidden flex flex-col h-full border border-slate-100" data-aos="fade-up">
+                    <div class="p-4 bg-slate-50">
+                        <img src=https://res.cloudinary.com/db4cqwalt/image/upload/v1769260799/Nude_Aesthetic_Daily_Motivation_Instagram_Post_k8iuc8.png alt="[MOCKUP PRODUCTO 1: Portada del PDF Educar sin gritar sobre tablet]" class="w-full h-auto rounded-2xl">
+                    </div>
+                    <div class="p-8 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="bg-orange-100 text-orange-600 font-bold px-3 py-1 rounded-full text-xs">INCLUIDO</span>
+                            <span class="line-through text-slate-400 font-bold">$29</span>
+                        </div>
+                        <h3 class="text-2xl font-extrabold text-slate-800 mb-4">📘 Educar sin gritar</h3>
+                        <p class="text-sm text-orange-500 font-bold mb-4 uppercase tracking-wider italic">Hoy por mucho menos</p>
+                        <p class="text-slate-600 mb-6 font-medium leading-relaxed">Guía paso a paso para dejar los gritos incluso cuando sentís que ya no podés más.</p>
+                        <ul class="space-y-2 text-sm text-slate-600 mb-8 font-medium">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Protocolo de emergencia</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Técnicas de respiración</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Fórmula para que escuchen</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Plan de 30 días</li>
+                            <li><i class="fas fa-star text-amber-400 mr-2"></i> 🎁 Incluye 6 imprimibles</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="bg-white rounded-[40px] shadow-xl overflow-hidden flex flex-col h-full border border-slate-100" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-4 bg-slate-50">
+                        <img src=https://res.cloudinary.com/db4cqwalt/image/upload/v1769261613/White_Minimalist_Paper_Card_Mockup_Instagram_Post_wz0792.png alt="[MOCKUP PRODUCTO 2: Portada del PDF Manejo de Rabietas en smartphone]" class="w-full h-auto rounded-2xl">
+                    </div>
+                    <div class="p-8 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="bg-orange-100 text-orange-600 font-bold px-3 py-1 rounded-full text-xs">INCLUIDO</span>
+                            <span class="line-through text-slate-400 font-bold">$18</span>
+                        </div>
+                        <h3 class="text-2xl font-extrabold text-slate-800 mb-4">🔥 Manejo de rabietas</h3>
+                        <p class="text-sm text-orange-500 font-bold mb-4 uppercase tracking-wider italic">Hoy por mucho menos</p>
+                        <p class="text-slate-600 mb-6 font-medium leading-relaxed">Herramientas prácticas para acompañar rabietas en niños de 2 a 8 años sin perder el control.</p>
+                        <ul class="space-y-2 text-sm text-slate-600 mb-8 font-medium">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Neurociencia aplicada</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Qué hacer y qué evitar</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Frases que conectan</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Juegos de autorregulación</li>
+                            <li><i class="fas fa-star text-amber-400 mr-2"></i> 🎁 Incluye imprimibles</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="bg-white rounded-[40px] shadow-xl overflow-hidden flex flex-col h-full border border-slate-100" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-4 bg-slate-50">
+                        <img src=https://res.cloudinary.com/db4cqwalt/image/upload/v1769260799/ChatGPT_Image_21_ene_2026_10_05_02_b6bhz1.png alt="[MOCKUP PRODUCTO 3: Portada del libro infantil Cuando me enojo]" class="w-full h-auto rounded-2xl">
+                    </div>
+                    <div class="p-8 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="bg-orange-100 text-orange-600 font-bold px-3 py-1 rounded-full text-xs">INCLUIDO</span>
+                            <span class="line-through text-slate-400 font-bold">$35</span>
+                        </div>
+                        <h3 class="text-2xl font-extrabold text-slate-800 mb-4">👦 Cuando me enojo</h3>
+                        <p class="text-sm text-orange-500 font-bold mb-4 uppercase tracking-wider italic">Hoy por mucho menos</p>
+                        <p class="text-slate-600 mb-6 font-medium leading-relaxed">Libro infantil para ayudar a niños a entender y regular el enojo de forma simple.</p>
+                        <ul class="space-y-2 text-sm text-slate-600 mb-8 font-medium">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Autoconocimiento corporal</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Pausas inteligentes</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Cómo reparar después</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i> Plan personal de calma</li>
+                            <li><i class="fas fa-star text-amber-400 mr-2"></i> 🎁 Guía para padres</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-20">
+                <a id="buyBtnPack" href="#precio" class="cta-button inline-block text-white font-bold py-6 px-12 rounded-2xl text-xl shadow-2xl">
+                    CONSIGUE EL PACK COMPLETO AHORA
+                </a>
+                <p class="mt-4 text-slate-500 font-bold">Todos los productos + bonos por un único pago</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. SECCIÓN DE BONOS -->
+    <section class="py-24 bg-amber-100 px-4">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16" data-aos="fade-up">🎁 BONOS INCLUIDOS (sin costo adicional)</h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <!-- Bono 1 -->
+                <div class="bg-white p-8 rounded-[40px] shadow-xl border-4 border-yellow-300 relative" data-aos="zoom-in">
+                    <div class="absolute -top-5 -left-5 bg-green-500 text-white font-bold px-4 py-2 rounded-xl text-sm shadow-lg">HOY GRATIS</div>
+                    <img src=https://res.cloudinary.com/db4cqwalt/image/upload/v1769263186/ChatGPT_Image_24_ene_2026_10_59_30_cxciji.png alt="[IMAGEN BONO 1: Mockup del PDF Educar con corazón]" class="w-full mb-6">
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="text-2xl">💛</span>
+                        <span class="line-through text-slate-400 font-bold">$29</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Bono 1: Educar con corazón</h3>
+                    <p class="text-slate-600">Guía práctica de inteligencia emocional para una crianza consciente, amorosa y con límites sanos.</p>
+                </div>
+                <!-- Bono 2 -->
+                <div class="bg-white p-8 rounded-[40px] shadow-xl border-4 border-yellow-300 relative" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="absolute -top-5 -left-5 bg-green-500 text-white font-bold px-4 py-2 rounded-xl text-sm shadow-lg">HOY GRATIS</div>
+                    <img src=https://res.cloudinary.com/db4cqwalt/image/upload/v1769260799/Beige_Minimalist_Paper_Mockup_Instagram_Post_2_rhz2gq.png alt="[IMAGEN BONO 2: Mockup del libro para colorear terapéutico]" class="w-full mb-6">
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="text-2xl">🎨</span>
+                        <span class="line-through text-slate-400 font-bold">$15</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Bono 2: Respirar antes de reaccionar</h3>
+                    <p class="text-slate-600">Libro terapéutico para colorear. Un espacio para regular el sistema nervioso y volver a vos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. PARA QUIÉN ES -->
+    <section class="py-24 bg-white px-4">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-right">
+                    <h2 class="text-3xl font-bold mb-8">✅ ¿Para quién es este pack?</h2>
+                    <p class="text-xl text-slate-600 mb-8">Para madres, padres y cuidadores con niños de 2 a 12 años que:</p>
+                    <ul class="space-y-6">
+                        <li class="flex items-center text-lg font-bold text-slate-700">
+                            <i class="fas fa-check check-icon text-2xl mr-4"></i> Quieren dejar de gritar, pero se sienten desbordados
+                        </li>
+                        <li class="flex items-center text-lg font-bold text-slate-700">
+                            <i class="fas fa-check check-icon text-2xl mr-4"></i> Buscan herramientas prácticas, no teoría
+                        </li>
+                        <li class="flex items-center text-lg font-bold text-slate-700">
+                            <i class="fas fa-check check-icon text-2xl mr-4"></i> Desean poner límites sin romper el vínculo
+                        </li>
+                        <li class="flex items-center text-lg font-bold text-slate-700">
+                            <i class="fas fa-check check-icon text-2xl mr-4"></i> Buscan un hogar con más regulación emocional
+                        </li>
+                    </ul>
+                </div>
+                <div data-aos="fade-left">
+                    <img src="https://res.cloudinary.com/db4cqwalt/image/upload/v1769282515/descarga_-_2026-01-24T155719.482_uwu8xi.jpg" alt="" class="rounded-[40px] shadow-2xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. ¿QUÉ NO ES? -->
+    <section class="py-24 bg-slate-800 text-white px-4">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl font-bold text-center mb-16">❌ ¿Qué NO es?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-lg">
+                <div class="flex items-center"><i class="fas fa-times x-icon mr-4 text-2xl"></i> No es un curso en video</div>
+                <div class="flex items-center"><i class="fas fa-times x-icon mr-4 text-2xl"></i> No incluye sesiones personalizadas</div>
+                <div class="flex items-center"><i class="fas fa-times x-icon mr-4 text-2xl"></i> No es un libro físico impreso</div>
+                <div class="flex items-center"><i class="fas fa-times x-icon mr-4 text-2xl"></i> No promete que nunca más habrá conflictos</div>
+            </div>
+            <div class="mt-16 text-center pt-10 border-t border-slate-700">
+                <p class="text-2xl font-bold text-green-400 italic">
+                    ✅ Es un sistema real para atravesarlos con más calma y herramientas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. DETALLES TÉCNICOS -->
+    <section class="py-20 bg-white px-4">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-3xl font-bold text-center mb-16">📦 Formato y entrega</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center">
+                <div data-aos="fade-up">
+                    <div class="text-3xl mb-4 text-orange-500"><i class="fas fa-file-pdf"></i></div>
+                    <p class="font-bold text-sm">100% Digital</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-3xl mb-4 text-orange-500"><i class="fas fa-bolt"></i></div>
+                    <p class="font-bold text-sm">Entrega Inmediata</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-3xl mb-4 text-orange-500"><i class="fas fa-mobile-alt"></i></div>
+                    <p class="font-bold text-sm">Multidispositivo</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-3xl mb-4 text-orange-500"><i class="fas fa-print"></i></div>
+                    <p class="font-bold text-sm">Imprimible</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-3xl mb-4 text-orange-500"><i class="fas fa-globe"></i></div>
+                    <p class="font-bold text-sm">Español Neutro</p>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="500">
+                    <div class="text-3xl mb-4 text-orange-500"><i class="fas fa-shield-check"></i></div>
+                    <p class="font-bold text-sm">Garantía Hotmart</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. TESTIMONIOS -->
+    <section class="py-24 bg-orange-50 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16" data-aos="fade-up">❤️ Lo que dicen las familias que ya están criando con calma</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonio 1 -->
+                <div class="bg-white p-8 rounded-3xl shadow-md" data-aos="fade-up">
+                    <div class="flex items-center mb-4">
+                        <img src="https://res.cloudinary.com/db4cqwalt/image/upload/v1769282718/descarga_6_kz7fbv.jpg" alt="[AVATAR: Inicial MG en círculo de color - María González]" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <p class="font-bold">María González</p>
+                            <div class="flex text-yellow-400 text-xs">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 text-sm italic">"Desde que aplico las técnicas del pack, los gritos en casa disminuyeron un 90%. Mi hija ahora me escucha la primera vez..."</p>
+                    <p class="text-xs text-slate-400 mt-4">Buenos Aires, Argentina</p>
+                </div>
+                <!-- Testimonio 2 -->
+                <div class="bg-white p-8 rounded-3xl shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <img src="https://res.cloudinary.com/db4cqwalt/image/upload/v1769282719/descarga_8_tdbyzu.jpg" alt="[AVATAR: Inicial LM en círculo de color - Laura Martínez]" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <p class="font-bold">Laura Martínez</p>
+                            <div class="flex text-yellow-400 text-xs">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 text-sm italic">"El libro infantil 'Cuando me enojo' fue un cambio total para mi hijo de 5 años. Ahora él mismo pide 'hacer una pausa'..."</p>
+                    <p class="text-xs text-slate-400 mt-4">Ciudad de México, México</p>
+                </div>
+                <!-- Testimonio 3 -->
+                <div class="bg-white p-8 rounded-3xl shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <img src="https://res.cloudinary.com/db4cqwalt/image/upload/v1769282716/descarga_qnibxy.jpg" alt="[AVATAR: Inicial CR en círculo de color - Carolina Ruiz]" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <p class="font-bold">Carolina Ruiz</p>
+                            <div class="flex text-yellow-400 text-xs">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 text-sm italic">"Me costó un poco al principio cambiar mis propios patrones, pero el plan de 30 días me ayudó muchísimo. Recomendado 100%."</p>
+                    <p class="text-xs text-slate-400 mt-4">Barcelona, España</p>
+                </div>
+                <!-- Testimonio 4 -->
+                <div class="bg-white p-8 rounded-3xl shadow-md" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center mb-4">
+                        <img src="https://res.cloudinary.com/db4cqwalt/image/upload/v1769282715/descarga_9_xfjdfy.jpg" alt="[AVATAR: Inicial SR en círculo de color - Sofía Ramírez]" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <p class="font-bold">Sofía Ramírez</p>
+                            <div class="flex text-yellow-400 text-xs">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 text-sm italic">"La guía de rabietas cambió nuestra vida familiar. Antes cada rabieta era un caos, ahora tengo herramientas claras."</p>
+                    <p class="text-xs text-slate-400 mt-4">Santiago, Chile</p>
+                </div>
+                <!-- Testimonio 5 -->
+                <div class="bg-white p-8 rounded-3xl shadow-md" data-aos="fade-up" data-aos-delay="400">
+                    <div class="flex items-center mb-4">
+                        <img src="https://res.cloudinary.com/db4cqwalt/image/upload/v1769282712/descarga_2_i1nyea.jpg" alt="[AVATAR: Inicial AT en círculo de color - Andrea Torres]" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <p class="font-bold">Andrea Torres</p>
+                            <div class="flex text-yellow-400 text-xs">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 text-sm italic">"Excelente material, muy práctico y directo. Los bonos también están muy buenos, especialmente el libro para colorear."</p>
+                    <p class="text-xs text-slate-400 mt-4">Valencia, España</p>
+                </div>
+                <!-- Testimonio 6 -->
+                <div class="bg-white p-8 rounded-3xl shadow-md" data-aos="fade-up" data-aos-delay="500">
+                    <div class="flex items-center mb-4">
+                        <img src="https://res.cloudinary.com/db4cqwalt/image/upload/v1769282711/descarga_10_zpxp1g.jpg" alt="[AVATAR: Inicial PM en círculo de color - Patricia Méndez]" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <p class="font-bold">Patricia Méndez</p>
+                            <div class="flex text-yellow-400 text-xs">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-slate-600 text-sm italic">"Como madre de 3 niños necesitaba algo que realmente funcione, no más teoría bonita. Este pack tiene todo."</p>
+                    <p class="text-xs text-slate-400 mt-4">Madrid, España</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. CIERRE + PRECIO + CTA FINAL -->
+    <section id="precio" class="py-24 bg-gradient-to-b from-orange-50 to-orange-200 px-4">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-8 leading-relaxed" data-aos="fade-up">
+                Criar sin gritos no se trata de "tener más paciencia".<br>
+                <span class="text-coral">Se trata de tener herramientas cuando más las necesitás.</span>
+            </h2>
+            <p class="text-xl text-slate-700 mb-12" data-aos="fade-up">Estás a una decisión de empezar distinto.</p>
+
+            <div class="bg-white p-10 md:p-16 rounded-[60px] shadow-2xl relative border-4 border-white mb-16" data-aos="zoom-in">
+                <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-orange-600 text-white font-bold px-8 py-2 rounded-full shadow-lg">OFERTA LIMITADA</div>
+                
+                <p class="text-slate-400 text-2xl line-through mb-2 font-bold">$126</p>
+                <div class="flex flex-col md:flex-row items-center justify-center gap-4 mb-6">
+                    <p class="text-6xl md:text-8xl font-black text-slate-800">USD $27</p>
+                    <div class="bg-green-100 text-green-700 font-black px-6 py-2 rounded-2xl text-xl">¡AHORRAS $99!</div>
+                </div>
+
+                <p class="text-lg text-slate-600 mb-10 max-w-xl mx-auto leading-relaxed font-medium">
+                    Un sistema completo para reducir gritos, acompañar rabietas y enseñar regulación emocional en casa. Incluye guías + imprimibles + bonos.
+                </p>
+
+                <div class="flex flex-col md:flex-row items-center justify-center gap-8 mb-12 py-8 border-y border-slate-100">
+                    <img src="https://res.cloudinary.com/db4cqwalt/image/upload/t_garantía 7 días/v1769282948/Sello_de_garant%C3%ADa_7_d%C3%ADas_imfxdp.png" alt="" class="w-32 h-32">
+                    <div class="text-left">
+                        <p class="text-2xl font-bold text-slate-800">✅ Garantía Hotmart 7 días</p>
+                        <p class="text-slate-500">Probá el material y si no es lo que esperabas, te devolvemos el 100% de tu dinero sin preguntas.</p>
+                    </div>
+                </div>
+
+                <!-- REEMPLAZAR CON ENLACE DE HOTMART -->
+                <a id="buyBtnFinal" href="#" class="cta-button pulse block w-full text-white font-black py-8 rounded-[30px] text-3xl shadow-2xl">
+                    SÍ, QUIERO EMPEZAR HOY MISMO
+                </a>
+                
+                <div class="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4 text-xs font-bold text-slate-400 uppercase tracking-widest">
+                    <p><i class="fas fa-lock mr-2"></i> Pago Seguro</p>
+                    <p><i class="fas fa-bolt mr-2"></i> Acceso Instantáneo</p>
+                    <p><i class="fas fa-credit-card mr-2"></i> Todas las tarjetas</p>
+                    <p><i class="fas fa-check-circle mr-2"></i> Sello Confianza</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 12. FOOTER -->
+    <footer class="py-16 bg-slate-900 text-slate-400 text-center px-4">
+        <div class="container mx-auto">
+            <h3 class="text-white text-2xl font-bold mb-6">Pack Crianza Consciente</h3>
+            <div class="flex justify-center space-x-6 mb-8 text-xl">
+             <!--  <a href="#" class="hover:text-white"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="hover:text-white"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="hover:text-white"><i class="fab fa-whatsapp"></i></a>-->
+            </div>
+            <p class="text-sm mb-4">
+                <a href="#" class="hover:underline">Términos y condiciones</a> | <a href="#" class="hover:underline">Política de privacidad</a>
+            </p>
+            <p class="text-xs opacity-50">© 2026 Pack Crianza Consciente - Editorial Creando Conciencia. Todos los derechos reservados.</p>
+            <div class="mt-8 opacity-30 grayscale inline-block">
+                <p class="text-xs font-bold uppercase tracking-widest mb-2">Plataforma de pago</p>
+                <!-- IMAGEN HOTMART LOGO -->
+                <img src="https://res.cloudinary.com/db4cqwalt/image/upload/v1769283170/logo-hotmart-icone-1024_guwrqu.png" alt="[Logotipo de Hotmart]" class="h-8 mx-auto">
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 800,
+        once: true,
+        offset: 100
+    });
+
+    // ✅ Smooth scroll solo para anclas reales (ej: #precio)
+    // ✅ Excluye el botón final de compra (buyBtnFinal)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+
+        // No aplicar smooth scroll al botón final de compra
+        if (anchor.id === "buyBtnFinal") return;
+
+        anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+
+            // Solo hacer smooth scroll si es un ancla real (no "#")
+            if (href && href.startsWith("#") && href.length > 1) {
+                const target = document.querySelector(href);
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    });
+</script>
+
+    
+    <!-- ✅ HOTLINK DINÁMICO PARA AFILIADOS (Hotmart)
+     Permite que el botón final de compra redirija al Hotlink del afiliado si la URL trae:
+     ?hotlink=PEGA_AQUI_TU_HOTLINK
+     Si no hay hotlink, usa el enlace de Hotmart por defecto (productora).
+-->
+<script>
+  const DEFAULT_HOTMART_URL = "https://pay.hotmart.com/D104070490S";
+
+  const params = new URLSearchParams(window.location.search);
+  const rawHotlink = params.get("hotlink");
+
+  function isValidUrl(url) {
+    try {
+      const u = new URL(url);
+      return u.protocol === "http:" || u.protocol === "https:";
+    } catch (e) {
+      return false;
+    }
+  }
+
+  const destination = (rawHotlink && isValidUrl(rawHotlink)) ? rawHotlink : DEFAULT_HOTMART_URL;
+
+  const buyBtnFinal = document.getElementById("buyBtnFinal");
+  if (buyBtnFinal) {
+    buyBtnFinal.href = destination;
+    buyBtnFinal.target = "_blank";
+    buyBtnFinal.rel = "noopener noreferrer";
+  }
+</script>
+
+</body>
+</html>
