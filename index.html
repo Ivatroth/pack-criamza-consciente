@@ -629,7 +629,7 @@
      Si no hay hotlink, usa el enlace de Hotmart por defecto (productora).
 -->
 <script>
-  const DEFAULT_HOTMART_URL = "https://pay.hotmart.com/D104070490S";
+  const DEFAULT_HOTMART_URL = "https://pay.hotmart.com/D104070490S?checkoutMode=10";
 
   const params = new URLSearchParams(window.location.search);
   const rawHotlink = params.get("hotlink");
@@ -654,4 +654,5 @@
 </script>
 
 </body>
+
 </html>
